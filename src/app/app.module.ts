@@ -1,18 +1,37 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { bootstrapApplication, BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { UiService } from './ui.service';
+import { CodeComponent } from './code/code.component';
+ import{HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CodeComponent,
+    
+  
+    // ReportComponent
+    
+    // codeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
+    
+    
+  
+  
   ],
-  providers: [],
+  providers: [UiService],
   bootstrap: [AppComponent]
+  
 })
 export class AppModule { }
+export class codeModule { }
+

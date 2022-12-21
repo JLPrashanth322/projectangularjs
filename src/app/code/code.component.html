@@ -1,0 +1,57 @@
+<table>
+
+    <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Email</th>
+        <th>contactNo</th>
+
+    </tr>
+
+    <tr *ngFor="let data of dataopg">
+
+        <p>{{codeForm | json}}</p>
+
+        <td>
+            {{data.firstName}}
+        </td>
+        <td>
+            {{data.lastName}}
+        </td>
+        <td>
+            {{data.email}}
+        </td>
+        <td>
+            {{data.contactNo}}
+        </td>
+    </tr>
+   
+    <tr *ngFor="let codeName of codeForm">
+        <td>
+            {{codeName.firstName}}
+        </td>
+        <td>
+            {{codeName.lastName}}
+        </td>
+        <td>
+            {{codeName.email}}
+        </td>
+        <td>
+            {{codeName.contactNo}}
+        </td>
+        <td>
+            {{codeName.Address}}
+        </td>
+
+    </tr>
+
+</table>
+
+
+   
+    <p>id:{{id}}</p>
+    <p>userid:{{userid}}</p>
+    <p>title:{{title}}</p>
+    <p>body:{{body}}</p>
+    
+
